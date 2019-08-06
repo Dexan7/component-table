@@ -2,9 +2,9 @@
     <div>
       <table class="table table-bordered table-dark">
         <thead>
-          <tr v-for="(column, key) in tableData[1]" :key="key">
-            <th>{{ key }}</th>
-          </tr>
+          <th v-for="(column, key) in tableData[1]" :key="key">
+            {{ key }}
+          </th>
         </thead>
         <tbody>
           <tr v-for="(column) in tableData" :key="column.id">
